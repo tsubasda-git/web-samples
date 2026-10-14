@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# 公開したら、サイトマップの場所を絶対URLで足す（例: Sitemap: https://example.com/sitemap.xml）

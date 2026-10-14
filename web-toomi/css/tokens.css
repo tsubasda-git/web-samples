@@ -1,0 +1,58 @@
+/* Hallmark · tokens · custom (vibe: "夜の眼鏡店・藍の夜・銅の光") · dark / classical-serif / warm（銅）
+ * 色・文字・余白・動きはすべてここで決め、css/site.css は var(--…) で参照する（直書きの色を使わない）。
+ * assets/*.svg は img で読むため CSS 変数が届かない。同じ値を scripts/draw_svg.py の冒頭にも書いてある。
+ */
+:root {
+  color-scheme: dark;
+
+  --color-paper: #151A26;        /* 夜の藍（背景） */
+  --color-paper-2: #1E2536;      /* 一段明るい面（表・フォーム） */
+  --color-ink: #F2EFE8;          /* 本文 */
+  --color-ink-dim: #A9ACB8;      /* 補足文 */
+  --color-accent: #D4895E;       /* 銅。ボタン・リンク・入力の下線だけ */
+  --color-accent-ink: #1A120C;   /* ボタンの文字 */
+  --color-focus: #F0B98A;        /* フォーカスの輪 */
+  --color-error: #F4A48C;        /* 入力エラーの文（対 paper 8:1 以上） */
+  --color-rule: rgb(242 239 232 / 0.18);
+  --color-border-control: #737A8C; /* 押せる枠（ラジオの札）の線。対 paper 4.0:1・対 paper-2 3.6:1（UI の境界は 3:1 以上） */
+  --color-veil: rgb(14 19 32 / 0.62);
+  --color-veil-strong: rgb(14 19 32 / 0.86);
+
+  --font-display: "Zen Old Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-display-s: clamp(1.75rem, 1.2rem + 2.2vw, 2.75rem);
+  --text-display: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --text-statement: clamp(2.25rem, 1rem + 6vw, 6rem);
+
+  /* 4pt の段 */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  --measure: 28em;               /* 本文の1行の長さの上限 */
+  --tap: 44px;                   /* 押せる大きさの下限 */
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.64, 0, 0.78, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 150ms;
+  --dur-med: 400ms;
+  --dur-slow: 900ms;
+
+  --radius-0: 0;
+  --radius-pill: 999px;
+  --rule-hair: 1px solid var(--color-rule);
+  --rule-accent: 1px solid var(--color-accent);
+  --rule-control: 1px solid var(--color-border-control);
+}

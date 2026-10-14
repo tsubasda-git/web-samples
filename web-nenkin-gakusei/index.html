@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ja" class="no-js">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学生納付特例 かんたんガイド（非公式の作例）</title>
+<meta name="description" content="国民年金の学生納付特例を、対象か・申請の流れ・松山市の窓口・追納の決まりの順に1ページで読める案内です。非公式の作例で、出典の公式ページをすべてリンクしています。">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230B5CAD'/%3E%3Cpath d='M9 8h10l4 4v12H9z' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.remove('no-js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- フォントの CSS は描画を止めないよう preload で読み、読み終わったら適用する（JS なしは noscript で通常読み込み） -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&amp;text=0123456789%E4%B8%87%E5%86%86%E5%B9%B4&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@700&amp;text=0123456789%E4%B8%87%E5%86%86%E5%B9%B4&amp;display=swap">
+</noscript>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <!-- assets/icons.svg と同じ内容（file:// では外部 SVG の <use> が読めないためインラインに置く） -->
+  <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 11h6"/><path d="M9 15h6"/><path d="M9 19h3"/>
+  </symbol>
+  <symbol id="i-office" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/><path d="M9 11h.01"/><path d="M15 11h.01"/>
+  </symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M8 14h3v3H8z"/>
+  </symbol>
+</svg>
+
+<a class="skip" href="#main">本文へ</a>
+
+<div class="notice" id="notice" role="region" aria-label="このページについてのお知らせ">
+  <div class="notice__inner">
+    <p class="notice__text"><strong>非公式の作例です。</strong>手続きは必ず公式ページで確かめてください。</p>
+    <button type="button" class="notice__close" id="notice-close">閉じる</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <p class="site-name">学生納付特例 かんたんガイド</p>
+    <p class="site-meta">確認日 2026-10-14。金額や条件は変わることがあります。最新は公式ページで確かめてください。</p>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc" aria-label="目次">
+    <p class="toc__title" id="toc-title">このページの目次</p>
+    <ul class="toc__list" aria-labelledby="toc-title">
+      <li><a href="#taisho">対象か確かめる</a></li>
+      <li><a href="#nagare">申請の流れ</a></li>
+      <li><a href="#matsuyama">松山市の場合</a></li>
+      <li><a href="#tsuino">あとで納める</a></li>
+      <li><a href="#shutten">出典</a></li>
+    </ul>
+  </nav>
+
+  <main id="main" tabindex="-1">
+
+    <section class="section lead" aria-labelledby="lead-title">
+      <h1 id="lead-title" tabindex="-1">学生のあいだ、年金の支払いを待ってもらう制度。</h1>
+      <p>国民年金保険料の「学生納付特例」の案内です。</p>
+      <p>申請して認められると、学生のあいだの納付が猶予（待ってもらうこと）されます。</p>
+      <ul class="points">
+        <li><span class="points__key">誰が</span><span>受けようとする年度の前年の所得が基準以下の学生。大学・短大・高校・専修学校などに在学する人です。</span></li>
+        <li><span class="points__key">どこで</span><span>市区町村役場の国民年金担当窓口、近くの年金事務所、在学中の学校（許認可がある場合）。電子申請もできます。</span></li>
+        <li><span class="points__key">いつまで</span><span>認められる期間は、原則、申請日にかかわらず4月から翌年3月までです。</span></li>
+      </ul>
+      <p class="source">出典: <a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html">国民年金保険料の学生納付特例制度（日本年金機構）</a></p>
+    </section>
+
+    <section class="section" id="taisho" aria-labelledby="taisho-title">
+      <h2 id="taisho-title">自分が対象か確かめる</h2>
+      <p>2つの質問に答えてください。結果は目安です。最後は窓口で確かめてください。</p>
+
+      <form class="check" id="check" action="#taisho" novalidate>
+        <fieldset class="q">
+          <legend>いま、学生ですか？</legend>
+          <p class="q__help" id="q1-help">大学・短大・高校・専修学校などの学生です。夜間・定時制・通信課程の人も含みます。</p>
+          <div class="q__choices">
+            <label class="choice"><input type="radio" name="student" value="yes" aria-describedby="q1-help">はい</label>
+            <label class="choice"><input type="radio" name="student" value="no" aria-describedby="q1-help">いいえ</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="q">
+          <legend>受けようとする年度の前年の所得は、次の基準以下ですか？</legend>
+          <div class="q__help" id="q2-help">
+            <p>基準は申請者本人の所得で見ます。</p>
+            <p class="big"><span class="figure">128万円</span><span class="big__note">扶養親族がいなければ、これに社会保険料控除等を足した額が基準です。</span></p>
+          </div>
+          <figure class="quote">
+            <blockquote cite="https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html">
+              <p id="q2-formula">128万円+扶養親族等の数×38万円+社会保険料控除等</p>
+            </blockquote>
+            <figcaption>所得基準（申請者本人のみ）。引用元: <a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html">国民年金保険料の学生納付特例制度（日本年金機構）</a></figcaption>
+          </figure>
+          <div class="q__choices">
+            <label class="choice"><input type="radio" name="income" value="yes" aria-describedby="q2-help q2-formula">はい</label>
+            <label class="choice"><input type="radio" name="income" value="no" aria-describedby="q2-help q2-formula">いいえ</label>
+          </div>
+        </fieldset>
+
+        <div class="result" id="result" aria-live="polite">
+          <p class="result__title" id="result-title">結果の見方</p>
+          <div id="result-body">
+            <p>2つとも「はい」なら、対象の可能性があります。窓口で確かめてください。</p>
+            <p>どちらかが「いいえ」なら、この制度の対象ではない可能性があります。免除・納付猶予は別の制度です。</p>
+            <p><a href="https://www.nenkin.go.jp/service/kokunen/menjo/index.html">国民年金保険料の免除・猶予・追納（日本年金機構）</a></p>
+          </div>
+        </div>
+      </form>
+      <p class="source">出典: <a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html">国民年金保険料の学生納付特例制度（日本年金機構）</a></p>
+    </section>
+
+    <section class="section" id="nagare" aria-labelledby="nagare-title">
+      <h2 id="nagare-title">申請の流れ</h2>
+      <figure class="flow-figure">
+        <img src="assets/flow.svg" alt="申請の流れ。用意する、出す、翌年度は返送する、の3段。" width="360" height="84">
+      </figure>
+      <ol class="steps">
+        <li class="step">
+          <h3 class="step__head"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>まず、書類を用意する</h3>
+          <dl class="facts">
+            <div><dt>必要な書類</dt><dd>在学証明書、または学生証の写し。</dd><dd>基礎年金番号通知書、またはマイナンバーカード。</dd></div>
+          </dl>
+        </li>
+        <li class="step">
+          <h3 class="step__head"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-office"/></svg>次に、申請書を出す</h3>
+          <dl class="facts">
+            <div><dt>申請先</dt>
+              <dd>
+                <ul class="list">
+                  <li>住民登録をしている市区町村役場の国民年金担当窓口</li>
+                  <li>近くの年金事務所</li>
+                  <li>在学中の学校（代行事務の許認可を受けている場合だけ）</li>
+                </ul>
+              </dd>
+            </div>
+            <div><dt>出し方</dt><dd>申請書を出すか、電子申請をします。</dd><dd>「ねんきんネット」で申請書の作成を手伝ってもらえます。</dd></div>
+            <div><dt>認められる期間</dt><dd>原則、申請日にかかわらず4月から翌年3月までです。</dd></div>
+          </dl>
+          <p class="source">出典: <a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html">国民年金保険料の学生納付特例制度（日本年金機構）</a></p>
+        </li>
+        <li class="step">
+          <h3 class="step__head"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-calendar"/></svg>翌年度は、届いたハガキを返送する</h3>
+          <p>翌年度も同じ学校に在学する場合は、日本年金機構から届くハガキの申請書を返送します。</p>
+          <p>学校が変わったら、改めて申請します。</p>
+          <p class="source">出典: <a href="https://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/kokunen/menjyo.html">国民年金保険料を納めるのが困難なときは（松山市）</a></p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="matsuyama" aria-labelledby="matsuyama-title">
+      <h2 id="matsuyama-title">松山市の場合</h2>
+      <p>松山市の案内では、前年所得が128万円以下の学生は納付が猶予されると書かれています。</p>
+      <div class="box">
+        <h3>窓口</h3>
+        <p>保険給付・年金課、または各支所で手続きします。</p>
+        <h3>問い合わせ先</h3>
+        <address class="address">
+          保険給付・年金課 年金担当（6番窓口）<br>
+          〒790-8571 愛媛県松山市二番町四丁目7-2 別館3階<br>
+          電話 <a class="tel" href="tel:0899486356">089-948-6356</a>
+        </address>
+      </div>
+      <p class="source">出典: <a href="https://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/kokunen/menjyo.html">国民年金保険料を納めるのが困難なときは（松山市）</a></p>
+
+      <h3>電子申請（マイナポータル）</h3>
+      <p>マイナポータルから電子申請ができます。学生納付特例も対象です。</p>
+      <p>使うには、次の準備が要ります。</p>
+      <ul class="list">
+        <li>マイナンバーカード（利用者用電子証明書）</li>
+        <li>カードを読み取れるスマートフォンかパソコン</li>
+        <li>マイナポータルの利用者登録</li>
+        <li>マイナポータルと「ねんきんネット」の連携</li>
+      </ul>
+      <p class="source">出典: <a href="https://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/kokunen/nenkin_mynaportal.html">いつでもどこでも申請できます「国民年金の電子申請」（松山市）</a></p>
+      <p>ほかの市区町村に住民登録がある人は、その役場の国民年金担当窓口へ。</p>
+    </section>
+
+    <section class="section" id="tsuino" aria-labelledby="tsuino-title">
+      <h2 id="tsuino-title">あとで納める（追納）</h2>
+      <p>追納（ついのう）は、猶予された保険料をあとから納めることです。</p>
+      <p class="big"><span class="figure">10年</span><span class="big__note">さかのぼって納められるのは、10年以内の期間です。</span></p>
+      <figure class="quote">
+        <blockquote cite="https://www.nenkin.go.jp/service/kokunen/menjo/20150331.html">
+          <p>追納が承認された月の前10年以内の免除等期間について追納が可能です。</p>
+        </blockquote>
+        <figcaption>引用元: <a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150331.html">国民年金保険料の追納制度（日本年金機構）</a></figcaption>
+      </figure>
+      <ul class="list">
+        <li>承認を受けた期間の翌年度から数えて3年度目以降に追納すると、当時の保険料額に、経過期間に応じた加算額が上乗せされます。</li>
+        <li>申し込みは、近くの年金事務所でします。街角の年金相談センターでは手続きできません。</li>
+        <li>原則、古い期間から納めます。</li>
+        <li>免除と、猶予・学生納付特例の両方がある人は、納める順序を年金事務所に相談します。</li>
+      </ul>
+      <p class="source">出典: <a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150331.html">国民年金保険料の追納制度（日本年金機構）</a></p>
+    </section>
+
+    <section class="section" id="shutten" aria-labelledby="shutten-title">
+      <h2 id="shutten-title">出典</h2>
+      <p>どのページも 2026-10-14 に開いて内容を確かめました。</p>
+      <ol class="sources">
+        <li>
+          <a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html">国民年金保険料の学生納付特例制度（日本年金機構）</a>
+          <span class="url">https://www.nenkin.go.jp/<wbr>service/<wbr>kokunen/<wbr>menjo/<wbr>20150514.html</span>
+        </li>
+        <li>
+          <a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150331.html">国民年金保険料の追納制度（日本年金機構）</a>
+          <span class="url">https://www.nenkin.go.jp/<wbr>service/<wbr>kokunen/<wbr>menjo/<wbr>20150331.html</span>
+        </li>
+        <li>
+          <a href="https://www.nenkin.go.jp/service/kokunen/menjo/index.html">国民年金保険料の免除・猶予・追納（日本年金機構）</a>
+          <span class="url">https://www.nenkin.go.jp/<wbr>service/<wbr>kokunen/<wbr>menjo/<wbr>index.html</span>
+        </li>
+        <li>
+          <a href="https://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/kokunen/menjyo.html">国民年金保険料を納めるのが困難なときは（松山市）</a>
+          <span class="url">https://www.city.matsuyama.ehime.jp/<wbr>kurashi/<wbr>tetsuzuki/<wbr>kokunen/<wbr>menjyo.html</span>
+        </li>
+        <li>
+          <a href="https://www.city.matsuyama.ehime.jp/kurashi/tetsuzuki/kokunen/nenkin_mynaportal.html">いつでもどこでも申請できます「国民年金の電子申請」（松山市）</a>
+          <span class="url">https://www.city.matsuyama.ehime.jp/<wbr>kurashi/<wbr>tetsuzuki/<wbr>kokunen/<wbr>nenkin_mynaportal.html</span>
+        </li>
+      </ol>
+    </section>
+
+  </main>
+</div>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <p class="foot__strong" id="disclaimer">非公式の作例です。このページは公的機関のサイトではありません。</p>
+    <p>手続きは必ず公式ページで確かめてください。</p>
+    <p>制作: kbytsubasa ／ 更新日 2026-10-14</p>
+  </div>
+</footer>
+
+<script src="js/check.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Hallmark · tokens · custom (vibe: "白い紙・藍の文字・黄色の付箋")
+ * axes: light / UD-gothic single / cool (藍)
+ * 設計書 Docs/web作例_設計.md §2.6 の値。色・書体・余白はすべてここから参照する。
+ */
+:root {
+  /* 色 */
+  --color-paper:      #FFFFFF;   /* 純白。オフホワイトにしない */
+  --color-paper-2:    #EEF3F8;   /* 寒色の薄い面（出典・松山市の囲み） */
+  --color-ink:        #10203A;   /* 本文の藍黒 */
+  --color-ink-dim:    #4A5568;   /* 補足 */
+  --color-accent:     #0B5CAD;   /* リンク・ボタン */
+  --color-accent-ink: #FFFFFF;
+  --color-focus:      #FFB400;   /* フォーカスの黄（GOV.UK に倣う） */
+  --color-focus-edge: #10203A;   /* 黄の外側に置く藍黒の輪（白地で 3:1 を確保） */
+  --color-banner:     #FFF4CC;   /* 帯＝注意の意味を持つ色。ページの背景には使わない */
+  --color-rule:       #CBD5E1;   /* 囲みの境界（飾り） */
+  --color-control:    #4A5568;   /* ラジオなど操作部品の境界（3:1 以上） */
+
+  /* 書体 */
+  --font-body: "BIZ UDPGothic", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  --font-figure: "M PLUS 1p", var(--font-body);
+
+  /* 文字の大きさ */
+  --text-sm:   0.9375rem;  /* 15px 補足・注記 */
+  --text-base: 1.0625rem;  /* 17px 本文 */
+  --text-lg:   1.25rem;
+  --text-h3:   1.25rem;
+  --text-h2:   clamp(1.5rem, 1.2rem + 1.4vw, 2rem);
+  --text-h1:   clamp(1.75rem, 1.3rem + 2.4vw, 2.625rem);
+  --text-figure: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem);
+  --leading:   1.8;
+  --leading-tight: 1.4;
+  --measure:   36em;       /* 1行の最大 36字 */
+
+  /* ページの幅（スマホ・タブレットは本文の幅、PC は目次＋本文。site.css の 64em 以上で上書き） */
+  --toc-w:     15rem;
+  --measure-page: 38.25rem; /* 36字 × 17px。ページの幅は文字の大きさに左右されないよう rem で持つ */
+  --page-max:  calc(var(--measure-page) + var(--space-sm) * 2);
+  --flow-max:  26rem;     /* 流れの図。文字が 16〜20px 前後に収まる幅 */
+
+  /* 余白（4pt） */
+  --space-xs:  8px;
+  --space-sm:  16px;
+  --space-md:  24px;
+  --space-lg:  32px;
+  --space-xl:  48px;
+  --space-2xl: 72px;
+
+  /* 形 */
+  --radius: 4px;
+  --rule-w: 1px;
+  --focus-w: 3px;
+  --tap: 44px;
+
+  /* 動き（帯の開閉だけ） */
+  --dur-fade: 150ms;
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+}

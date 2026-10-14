@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web 制作の作例3本（kbytsubasa）— お店の LP・案内ページ・5ページのホームページ</title>
+<meta name="description" content="お店の LP、制度の案内ページ、5ページのホームページと体験予約フォーム。Claude Code を使って作った Web 制作の作例3本と、かかった時間、ご依頼のときの納期の目安と進め方。">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1D21'/%3E%3Cpath d='M9 9v14M9 16l8-7M12 14l6 9' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap"></noscript>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へ</a>
+
+<main id="main">
+  <section class="wrap intro" aria-labelledby="intro-title">
+    <div>
+      <h1 class="intro__title" id="intro-title"><span class="intro__title-name">kbytsubasa</span><span class="vh"> の</span>Web 制作の作例</h1>
+      <ul class="can">
+        <li>お店の LP を HTML/CSS で1ページ作れます。</li>
+        <li>5ページ程度のホームページを、WordPress に移せる構成で作れます。</li>
+        <li>公開されている制度や手続きの資料を、スマホで読みやすい案内ページに作り直せます。</li>
+      </ul>
+      <p class="intro__note">3本とも AI（Claude Code）を使って作りました。各作例に、ご依頼いただいた場合の納期の目安を書いています。</p>
+      <p class="intro__link">GitHub: <a class="top__link" href="https://github.com/tsubasda-git" rel="noopener">github.com/tsubasda-git</a></p>
+    </div>
+
+    <nav class="toc" aria-label="作例の一覧">
+      <p class="toc__head">作例3本</p>
+      <ul>
+        <li><a href="#toomi"><span class="toc__name">とおみ眼鏡店</span><span class="toc__kind">お店の LP・1ページ<span class="nw">（架空の店舗）</span></span><span class="toc__due">納期の目安 8日前後</span></a></li>
+        <li><a href="#nenkin"><span class="toc__name">学生納付特例<wbr> かんたんガイド</span><span class="toc__kind">制度の案内ページ・1ページ<span class="nw">（非公式）</span></span><span class="toc__due">納期の目安 4日前後</span></a></li>
+        <li><a href="#amenbo"><span class="toc__name">あめんぼ<wbr>プログラミング教室</span><span class="toc__kind">ホームページ5ページ＋体験予約<span class="nw">（架空の教室）</span></span><span class="toc__due">納期の目安 7日前後</span></a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <div class="works">
+    <!-- 作例1 -->
+    <article class="wrap work" id="toomi" aria-labelledby="toomi-title">
+      <header class="work__head">
+        <h2 class="work__title" id="toomi-title">とおみ眼鏡店</h2>
+        <p class="work__kind">お店の LP・1ページ・スクロールで眼鏡が組み上がる演出つき</p>
+      </header>
+
+      <figure class="work__fig">
+        <img class="shots-pc-only" src="shots/toomi-pc.webp" width="1200" height="750" fetchpriority="high" alt="PC の画面。暗い店内の台の上に組み上がった眼鏡があり、左に「テンプルは、耳の高さから。」の見出し。">
+        <ul class="frames">
+          <li><img src="shots/toomi-sp-frame.webp" width="390" height="844" loading="lazy" alt="スマホの画面1。台の上にフレームだけが降りている。"></li>
+          <li><img src="shots/toomi-sp-lens.webp" width="390" height="844" loading="lazy" alt="スマホの画面2。フレームにレンズが入った。"></li>
+          <li><img src="shots/toomi-sp-scene-b.webp" width="390" height="844" loading="lazy" alt="スマホの画面3。検眼の場面に切り替わり「かけ比べて、決める。」の見出し。"></li>
+        </ul>
+        <figcaption>スマホでスクロールしたときの3コマ。フレーム、レンズの順に降りてきて、組み上がったあとは店の場面に切り替わります。</figcaption>
+      </figure>
+
+      <div class="work__body">
+        <div class="ask">
+          <p class="ask__label">想定した依頼文</p>
+          <blockquote><p>松山市内で眼鏡店を営んでいます。インスタから来てくれたお客さんに見せる、スマホで見やすい1ページのサイトを作ってほしいです。写真はこちらで用意します。「来店予約」のボタンを目立たせたい。予算 2〜3万円、納期 2週間ほど。</p></blockquote>
+        </div>
+        <p class="made">眼鏡の部品6つがスクロールに合わせて降りてくる LP に、仕立ての流れ・料金の目安・店の案内・来店予約フォームを付けました。絵は写真を使わず、すべて SVG で描いています。</p>
+        <dl class="facts">
+          <div>
+            <dt>ご依頼の場合の納期の目安</dt>
+            <dd><span class="due">8日前後</span><span class="sub">8〜12時間の作業を、1日1〜2時間で進めた場合。修正2回まで込み（範囲は下の「進め方」）。</span></dd>
+          </div>
+        </dl>
+        <div class="work__foot">
+          <a class="chip" href="../web-toomi/index.html">作例を開く<span class="vh">：とおみ眼鏡店</span></a>
+          <p class="work__mark">架空の店舗です。</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 作例2 -->
+    <article class="wrap work work--flip" id="nenkin" aria-labelledby="nenkin-title">
+      <header class="work__head">
+        <h2 class="work__title" id="nenkin-title">学生納付特例<wbr> かんたんガイド</h2>
+        <p class="work__kind">制度の案内ページ・1ページ・対象かどうかの判定つき</p>
+      </header>
+
+      <figure class="work__fig">
+        <div class="shots">
+          <img class="shots__pc" src="shots/nenkin-pc.webp" width="1200" height="750" loading="lazy" alt="PC の画面。左に目次、右に「学生のあいだ、年金の支払いを待ってもらう制度。」の見出しと、誰が・どこで・いつまでの表。">
+          <img class="shots__sp" src="shots/nenkin-sp.webp" width="390" height="844" loading="lazy" alt="スマホの画面。所得の基準の質問に「はい」と答え、「対象の可能性があります」と表示されたところ。">
+        </div>
+        <figcaption>左が PC の最初の画面、右がスマホで質問に答えたあとの画面です。</figcaption>
+      </figure>
+
+      <div class="work__body">
+        <div class="ask">
+          <p class="ask__label">想定した依頼文</p>
+          <blockquote><p>学生向けの支援を案内するサイトを運営しています。年金の学生納付特例のページを、公式サイトのリンクを残したまま、スマホで読みやすい1ページに作り直してほしいです。読みづらい制度文を、自分が対象かどうかすぐ分かる形に。予算 1〜2万円。</p></blockquote>
+        </div>
+        <p class="made">「いま学生か」「前年の所得が基準以下か」の2つに答えると対象かどうかの見込みが出る案内ページです。申請の流れ・松山市の窓口・あとで納める決まりをまとめ、出典の公式ページ5件にリンクしています。</p>
+        <dl class="facts">
+          <div>
+            <dt>ご依頼の場合の納期の目安</dt>
+            <dd><span class="due">4日前後</span><span class="sub">4〜6時間の作業を、1日1〜2時間で進めた場合。修正2回まで込み（範囲は下の「進め方」）。</span></dd>
+          </div>
+        </dl>
+        <div class="work__foot">
+          <a class="chip" href="../web-nenkin-gakusei/index.html">作例を開く<span class="vh">：学生納付特例 かんたんガイド</span></a>
+          <p class="work__mark">非公式の作例です。手続きは公式ページで確かめてください。</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- 作例3 -->
+    <article class="wrap work" id="amenbo" aria-labelledby="amenbo-title">
+      <header class="work__head">
+        <h2 class="work__title" id="amenbo-title">あめんぼ<wbr>プログラミング教室</h2>
+        <p class="work__kind">ホームページ5ページ・体験予約フォームつき</p>
+      </header>
+
+      <figure class="work__fig">
+        <div class="shots">
+          <img class="shots__pc" src="shots/amenbo-pc.webp" width="1200" height="750" loading="lazy" alt="トップページの PC の画面。「つくって、うごかして、わかる。」の見出しと、教室の机と画面の絵。">
+          <img class="shots__sp" src="shots/amenbo-sp.webp" width="390" height="844" loading="lazy" alt="スマホの体験予約の画面。入力・確認・完了のうち確認の段階で、「架空の教室の作例です。送信はされません。」の注意書き。">
+        </div>
+        <figcaption>左がトップの PC の画面、右がスマホの予約フォームの確認の段階です。</figcaption>
+      </figure>
+
+      <div class="work__body">
+        <div class="ask">
+          <p class="ask__label">想定した依頼文</p>
+          <blockquote><p>子ども向けのプログラミング教室を始めます。WordPress で5ページほどのホームページを作りたいです（トップ・コース・教室案内・アクセス・お問い合わせ）。無料体験の予約フォームを目立たせたい。写真と文章はこちらで渡します。予算 3〜5万円。</p></blockquote>
+        </div>
+        <p class="made">トップ・コースと料金・教室と講師・アクセスと質問・体験の予約の5ページです。予約フォームは入力、確認、完了の3段で、空のまま送ると欄の下にエラーが出ます。ヘッダーとフッターを部品として分けてあるので、WordPress のテーマに移せます。</p>
+        <dl class="facts">
+          <div>
+            <dt>ご依頼の場合の納期の目安</dt>
+            <dd><span class="due">7日前後</span><span class="sub">8〜10時間の作業を、1日1〜2時間で進めた場合。修正2回まで込み（範囲は下の「進め方」）。</span></dd>
+          </div>
+        </dl>
+        <div class="work__foot">
+          <a class="chip" href="../web-amenbo/index.html">作例を開く<span class="vh">：あめんぼプログラミング教室</span></a>
+          <p class="work__mark">架空の教室です。フォームは送信されません。</p>
+        </div>
+      </div>
+    </article>
+
+    <p class="wrap works__note">納期の目安は、1日1〜2時間の作業で数えた日数です。打ち合わせや素材の受け取りの日程で前後します。</p>
+  </div>
+
+  <section class="wrap how" aria-labelledby="how-title">
+    <div>
+      <h2 class="how__title" id="how-title">ご依頼のときの進め方</h2>
+      <p class="how__lead">作業は毎日1〜2時間です。打ち合わせは平日19時以降にお願いしています。</p>
+    </div>
+    <ol class="how__list">
+      <li>
+        <h3>AI を使って作ります</h3>
+        <p>制作には Claude Code を使い、できあがったものはお渡しする前に自分で確かめます。</p>
+      </li>
+      <li>
+        <h3>最初にうかがうこと</h3>
+        <ul>
+          <li>載せたい内容（文章・写真・料金・営業時間など）</li>
+          <li>いちばん押してほしいボタン（予約・問い合わせ・電話など）</li>
+          <li>参考にしたいサイトと、公開する場所（WordPress かどうか）</li>
+          <li>納期と予算</li>
+        </ul>
+      </li>
+      <li>
+        <h3>先に一部を見ていただきます</h3>
+        <p>最初の1画面を作ってお見せし、方向が合っているかを確かめてから残りを作ります。</p>
+      </li>
+      <li>
+        <h3>修正は2回まで含みます</h3>
+        <p>文言・色・画像の差し替えが対象です。ページ構成の変更は別にお見積もりします。</p>
+      </li>
+      <li>
+        <h3>お渡しする前に確かめること</h3>
+        <ul>
+          <li>スマホからPCまで6つの画面幅で、崩れや横のはみ出しがないか</li>
+          <li>Lighthouse の4項目（速さ・アクセシビリティ・ベストプラクティス・SEO）</li>
+          <li>フォームの入力とエラーの出方、リンク切れ、文字と背景の色の差</li>
+        </ul>
+        <p>上の3本は、Lighthouse（スマホ）の4項目がどれも 100（あめんぼは5ページとも）で、6つの幅で横にはみ出さないことを確かめています。年金の案内は出典の公式ページ5件が開けること、あめんぼは予約フォームの試験 42項目が通ることも確かめました。</p>
+      </li>
+      <li>
+        <h3>写真は後から差し替えられます</h3>
+        <p>作例の絵は写真を使わず CSS と SVG で描いています。お店の写真をいただければ、同じ構成のまま差し替えます。</p>
+      </li>
+    </ol>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__name">kbytsubasa</p>
+    <p class="foot__line">更新 2026-10-14 ・ GitHub: <a href="https://github.com/tsubasda-git" rel="noopener">github.com/tsubasda-git</a></p>
+    <p class="foot__notice">掲載している店舗・教室は架空、年金の案内は非公式の作例です。</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440">
+  <!-- 簡略地図（架空・実在の地名なし）。色は css/tokens.css と同じ -->
+  <rect width="640" height="440" rx="12" fill="#EAF4EE"/>
+  <!-- 小川 -->
+  <path d="M0 360 C120 330 200 400 320 370 S520 320 640 350" fill="none" stroke="#2F7D4F" stroke-width="18" stroke-linecap="round" opacity="0.35"/>
+  <!-- 道 -->
+  <g stroke="#FFFFFF" stroke-width="28" stroke-linecap="round">
+    <line x1="0" y1="140" x2="640" y2="140"/>
+    <line x1="240" y1="0" x2="240" y2="440"/>
+    <line x1="470" y1="0" x2="470" y2="300"/>
+  </g>
+  <g stroke="#1E2A24" stroke-width="2" fill="none" stroke-dasharray="10 8">
+    <line x1="0" y1="140" x2="640" y2="140"/>
+    <line x1="240" y1="0" x2="240" y2="440"/>
+  </g>
+  <g font-family="'Hiragino Maru Gothic ProN','Hiragino Sans',sans-serif" font-weight="700" fill="#1E2A24">
+    <!-- 教室 -->
+    <rect x="290" y="180" width="140" height="80" rx="10" fill="#C94A22" stroke="#1E2A24" stroke-width="3"/>
+    <text x="360" y="215" text-anchor="middle" font-size="18" fill="#FFFFFF">あめんぼ</text>
+    <text x="360" y="240" text-anchor="middle" font-size="14" fill="#FFFFFF">教室（2階）</text>
+    <!-- 駐車場 -->
+    <rect x="290" y="280" width="80" height="50" rx="6" fill="#FFFFFF" stroke="#1E2A24" stroke-width="3"/>
+    <text x="330" y="312" text-anchor="middle" font-size="16">P 2台</text>
+    <!-- 駐輪場 -->
+    <rect x="380" y="280" width="70" height="50" rx="6" fill="#FFFFFF" stroke="#1E2A24" stroke-width="3"/>
+    <text x="415" y="312" text-anchor="middle" font-size="14">駐輪場</text>
+    <!-- バス停 -->
+    <circle cx="200" cy="110" r="14" fill="#2F7D4F" stroke="#1E2A24" stroke-width="3"/>
+    <text x="196" y="80" text-anchor="end" font-size="15">バス停（架空）</text>
+    <!-- 目印 -->
+    <rect x="60" y="180" width="120" height="70" rx="8" fill="#FFFFFF" stroke="#1E2A24" stroke-width="3"/>
+    <text x="120" y="221" text-anchor="middle" font-size="15">公園</text>
+    <rect x="500" y="40" width="110" height="70" rx="8" fill="#FFFFFF" stroke="#1E2A24" stroke-width="3"/>
+    <text x="555" y="81" text-anchor="middle" font-size="15">小学校</text>
+    <text x="620" y="420" text-anchor="end" font-size="13">架空の地図です</text>
+  </g>
+</svg>

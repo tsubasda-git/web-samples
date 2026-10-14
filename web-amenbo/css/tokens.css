@@ -1,0 +1,62 @@
+/* Hallmark · tokens · custom (vibe: "あめんぼの緑・白い教室・赤橙の札") · light / rounded-sans / green + warm accent
+ * 出典: Docs/web作例_設計.md §3.5。WordPress では theme.json の settings.color.palette / typography / spacing に移す
+ * コントラスト実測（WCAG の式）: ink/paper 14.87 · ink-dim/paper 5.65 · ink-dim/paper-2 5.03 · 白/brand 5.04 · 白/accent 4.68
+ * 注意: brand/paper-2 は 4.48 で本文に足りない → 薄緑の面の文字は ink か ink-dim を使う
+ * 注意: focus(#FFC53D) は白地で 1.58 → 単独で使わず ink の線と重ねて輪にする（site.css の :focus-visible）
+ */
+:root {
+  /* 色 */
+  --color-paper: #FFFFFF;
+  --color-paper-2: #EAF4EE;
+  --color-ink: #1E2A24;
+  --color-ink-dim: #5A6B62;
+  --color-brand: #2F7D4F;
+  --color-brand-deep: #23603C;
+  --color-accent: #C94A22;
+  --color-accent-deep: #A83B19;
+  --color-focus: #FFC53D;
+  --color-on-fill: #FFFFFF;
+  --color-error: #B3261E;
+  --color-placeholder: #D9DED9;
+  --color-placeholder-ink: #4A5550;
+
+  /* 文字 */
+  --font-display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", sans-serif;
+  --font-body: "M PLUS 1p", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: clamp(1.75rem, 1.2rem + 2.4vw, 2.5rem);
+  --text-display: clamp(2rem, 1.1rem + 4vw, 3.5rem);
+  --leading-body: 1.7;
+  --leading-tight: 1.3;
+
+  /* 余白（4pt） */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 80px;
+
+  /* 形 */
+  --radius-card: 16px;
+  --radius-btn: 12px;
+  --radius-input: 8px;
+  --rule: 1px;
+  --rule-strong: 2px;
+  --page-max: 1120px;
+  --page-gutter: 16px;
+  --tap: 44px;
+
+  /* 動き（ホバーの色だけ） */
+  --dur-fast: 150ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  :root { --page-gutter: 32px; }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 84" width="360" height="84" role="img" aria-label="申請の流れ。用意する、出す、翌年度は返送する、の3段。">
+  <!-- 申請の流れ（3段の見取り図）。色は css/tokens.css と同じ値: paper-2 #EEF3F8 / ink #10203A / accent #0B5CAD / rule #CBD5E1
+       <img> で読むため Web フォントは使えない。日本語の入ったシステム書体を順に指定する -->
+  <g fill="#EEF3F8" stroke="#CBD5E1" stroke-width="1">
+    <rect x="2" y="14" width="96" height="56" rx="4"/>
+    <rect x="132" y="14" width="96" height="56" rx="4"/>
+    <rect x="262" y="14" width="96" height="56" rx="4"/>
+  </g>
+  <g fill="#10203A" font-family="'BIZ UDPGothic','Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Noto Sans CJK JP','Yu Gothic',Meiryo,sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+    <text x="50" y="49">用意する</text>
+    <text x="180" y="49">出す</text>
+    <text x="310" y="49">返送する</text>
+  </g>
+  <g fill="none" stroke="#0B5CAD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M104 42h20"/><path d="M117 35l7 7-7 7"/>
+    <path d="M234 42h20"/><path d="M247 35l7 7-7 7"/>
+  </g>
+</svg>
