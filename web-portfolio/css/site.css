@@ -300,7 +300,7 @@ a:hover { text-decoration-thickness: 2px; }
 .how {
   display: grid;
   gap: var(--space-lg);
-  padding-block: var(--space-xl) var(--space-2xl);
+  padding-block: var(--space-xl);
 }
 .how__title { font-size: var(--text-2xl); }
 .how__lead { margin-top: var(--space-sm); color: var(--color-ink-dim); }
@@ -315,6 +315,66 @@ a:hover { text-decoration-thickness: 2px; }
   margin-top: var(--space-xs);
   padding-left: 1.25em;
 }
+
+/* ---------- 相談の入口（冒頭と最後） ---------- */
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+.chip--solid { background: var(--color-accent); color: var(--color-accent-ink); }
+.chip--solid:hover { background: var(--color-ink-dim); border-color: var(--color-ink-dim); }
+
+/* ---------- 料金の目安・作っている人（進め方と同じ左右の組み） ---------- */
+.price,
+.me {
+  display: grid;
+  gap: var(--space-lg);
+  padding-block: var(--space-xl);
+  border-bottom: var(--rule-hair) solid var(--color-rule);
+}
+.price__title,
+.me__title,
+.ask-us__title { font-size: var(--text-2xl); }
+.price__lead,
+.me__lead,
+.ask-us__lead { margin-top: var(--space-sm); color: var(--color-ink-dim); max-width: 38em; }
+
+.plans {
+  list-style: none;
+  display: grid;
+  gap: var(--space-sm);
+}
+.plan {
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+}
+.plan__name { font-size: var(--text-lg); }
+.plan__price {
+  margin-top: var(--space-xs);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  white-space: nowrap;
+}
+.plan__what { margin-top: var(--space-xs); font-size: var(--text-sm); color: var(--color-ink-dim); }
+.price__note { font-size: var(--text-sm); color: var(--color-ink-dim); grid-column: 1 / -1; }
+
+.me__facts { border-top: var(--rule-hair) solid var(--color-rule-strong); }
+.me__facts > div {
+  padding-block: var(--space-sm);
+  border-bottom: var(--rule-hair) solid var(--color-rule);
+}
+.me__facts dt { font-size: var(--text-sm); font-weight: 700; color: var(--color-ink-dim); }
+.me__facts dd { margin: var(--space-2xs) 0 0; }
+
+.ask-us {
+  padding-block: var(--space-xl) var(--space-2xl);
+  border-top: var(--rule-hair) solid var(--color-rule-strong);
+}
+.ask-us .chip { margin-top: var(--space-md); }
 
 /* ---------- 下の帯（Ft1） ---------- */
 .foot {
@@ -350,11 +410,20 @@ a:hover { text-decoration-thickness: 2px; }
     grid-template-areas: "fig head" "fig body";
   }
   .work__fig { align-self: start; position: sticky; top: var(--space-lg); }
-  .how {
+  .how,
+  .price,
+  .me {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
     gap: var(--space-xl);
   }
 }
+@media (min-width: 640px) {
+  .plans { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 900px) {
+  .plans { grid-template-columns: minmax(0, 1fr); }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0ms !important; }
