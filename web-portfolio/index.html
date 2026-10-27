@@ -4,8 +4,8 @@
   <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Web 制作の作例3本（kbytsubasa）— お店の LP・案内ページ・5ページのホームページ</title>
-<meta name="description" content="お店の LP、制度の案内ページ、5ページのホームページと体験予約フォーム。Claude Code を使って作った Web 制作の作例3本と、かかった時間、ご依頼のときの納期の目安と進め方。">
+<title>Web 制作の作例2本（kbytsubasa）— 案内ページ・5ページのホームページ</title>
+<meta name="description" content="制度の案内ページと、5ページのホームページと体験予約フォーム。Claude Code を使って作った Web 制作の作例2本と、かかった時間、ご依頼のときの納期の目安と進め方。">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1D21'/%3E%3Cpath d='M9 9v14M9 16l8-7M12 14l6 9' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,14 +27,13 @@
         <li>5ページ程度のホームページを、WordPress に移せる構成で作れます。</li>
         <li>公開されている制度や手続きの資料を、スマホで読みやすい案内ページに作り直せます。</li>
       </ul>
-      <p class="intro__note">3本とも AI（Claude Code）を使って作りました。各作例に、ご依頼いただいた場合の納期の目安を書いています。</p>
+      <p class="intro__note">2本とも AI（Claude Code）を使って作りました。各作例に、ご依頼いただいた場合の納期の目安を書いています。</p>
       <p class="intro__link">GitHub: <a class="top__link" href="https://github.com/tsubasda-git" rel="noopener">github.com/tsubasda-git</a></p>
     </div>
 
     <nav class="toc" aria-label="作例の一覧">
-      <p class="toc__head">作例3本</p>
+      <p class="toc__head">作例2本</p>
       <ul>
-        <li><a href="#toomi"><span class="toc__name">とおみ眼鏡店</span><span class="toc__kind">お店の LP・1ページ<span class="nw">（架空の店舗）</span></span><span class="toc__due">納期の目安 8日前後</span></a></li>
         <li><a href="#nenkin"><span class="toc__name">学生納付特例<wbr> かんたんガイド</span><span class="toc__kind">制度の案内ページ・1ページ<span class="nw">（非公式）</span></span><span class="toc__due">納期の目安 4日前後</span></a></li>
         <li><a href="#amenbo"><span class="toc__name">あめんぼ<wbr>プログラミング教室</span><span class="toc__kind">ホームページ5ページ＋体験予約<span class="nw">（架空の教室）</span></span><span class="toc__due">納期の目安 7日前後</span></a></li>
       </ul>
@@ -42,43 +41,6 @@
   </section>
 
   <div class="works">
-    <!-- 作例1 -->
-    <article class="wrap work" id="toomi" aria-labelledby="toomi-title">
-      <header class="work__head">
-        <h2 class="work__title" id="toomi-title">とおみ眼鏡店</h2>
-        <p class="work__kind">お店の LP・1ページ・スクロールで眼鏡が組み上がる演出つき</p>
-      </header>
-
-      <figure class="work__fig">
-        <img class="shots-pc-only" src="shots/toomi-pc.webp" width="1200" height="750" fetchpriority="high" alt="PC の画面。暗い店内の台の上に組み上がった眼鏡があり、左に「テンプルは、耳の高さから。」の見出し。">
-        <ul class="frames">
-          <li><img src="shots/toomi-sp-frame.webp" width="390" height="844" loading="lazy" alt="スマホの画面1。台の上にフレームだけが降りている。"></li>
-          <li><img src="shots/toomi-sp-lens.webp" width="390" height="844" loading="lazy" alt="スマホの画面2。フレームにレンズが入った。"></li>
-          <li><img src="shots/toomi-sp-scene-b.webp" width="390" height="844" loading="lazy" alt="スマホの画面3。検眼の場面に切り替わり「かけ比べて、決める。」の見出し。"></li>
-        </ul>
-        <figcaption>スマホでスクロールしたときの3コマ。フレーム、レンズの順に降りてきて、組み上がったあとは店の場面に切り替わります。</figcaption>
-      </figure>
-
-      <div class="work__body">
-        <div class="ask">
-          <p class="ask__label">想定した依頼文</p>
-          <blockquote><p>松山市内で眼鏡店を営んでいます。インスタから来てくれたお客さんに見せる、スマホで見やすい1ページのサイトを作ってほしいです。写真はこちらで用意します。「来店予約」のボタンを目立たせたい。予算 2〜3万円、納期 2週間ほど。</p></blockquote>
-        </div>
-        <p class="made">眼鏡の部品6つがスクロールに合わせて降りてくる LP に、仕立ての流れ・料金の目安・店の案内・来店予約フォームを付けました。絵は写真を使わず、すべて SVG で描いています。</p>
-        <dl class="facts">
-          <div>
-            <dt>ご依頼の場合の納期の目安</dt>
-            <dd><span class="due">8日前後</span><span class="sub">8〜12時間の作業を、1日1〜2時間で進めた場合。修正2回まで込み（範囲は下の「進め方」）。</span></dd>
-          </div>
-        </dl>
-        <div class="work__foot">
-          <a class="chip" href="../web-toomi/index.html">作例を開く<span class="vh">：とおみ眼鏡店</span></a>
-          <p class="work__mark">架空の店舗です。</p>
-        </div>
-      </div>
-    </article>
-
-    <!-- 作例2 -->
     <article class="wrap work work--flip" id="nenkin" aria-labelledby="nenkin-title">
       <header class="work__head">
         <h2 class="work__title" id="nenkin-title">学生納付特例<wbr> かんたんガイド</h2>
@@ -112,8 +74,8 @@
       </div>
     </article>
 
-    <!-- 作例3 -->
-    <article class="wrap work" id="amenbo" aria-labelledby="amenbo-title">
+    <!-- 作例2 -->
+    <article class="wrap work work--flip" id="amenbo" aria-labelledby="amenbo-title">
       <header class="work__head">
         <h2 class="work__title" id="amenbo-title">あめんぼ<wbr>プログラミング教室</h2>
         <p class="work__kind">ホームページ5ページ・体験予約フォームつき</p>
@@ -183,7 +145,7 @@
           <li>Lighthouse の4項目（速さ・アクセシビリティ・ベストプラクティス・SEO）</li>
           <li>フォームの入力とエラーの出方、リンク切れ、文字と背景の色の差</li>
         </ul>
-        <p>上の3本は、Lighthouse（スマホ）の4項目がどれも 100（あめんぼは5ページとも）で、6つの幅で横にはみ出さないことを確かめています。年金の案内は出典の公式ページ5件が開けること、あめんぼは予約フォームの試験 42項目が通ることも確かめました。</p>
+        <p>上の2本は、Lighthouse（スマホ）の4項目がどれも 100（あめんぼは5ページとも）で、6つの幅で横にはみ出さないことを確かめています。年金の案内は出典の公式ページ5件が開けること、あめんぼは予約フォームの試験 42項目が通ることも確かめました。</p>
       </li>
       <li>
         <h3>写真は後から差し替えられます</h3>
@@ -197,7 +159,7 @@
   <div class="wrap">
     <p class="foot__name">kbytsubasa</p>
     <p class="foot__line">更新 2026-10-14 ・ GitHub: <a href="https://github.com/tsubasda-git" rel="noopener">github.com/tsubasda-git</a></p>
-    <p class="foot__notice">掲載している店舗・教室は架空、年金の案内は非公式の作例です。</p>
+    <p class="foot__notice">掲載している教室は架空、年金の案内は非公式の作例です。</p>
   </div>
 </footer>
 </body>
